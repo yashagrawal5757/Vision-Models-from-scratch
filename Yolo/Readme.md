@@ -47,19 +47,7 @@ During training, the localization and classification errors are optimized jointl
 as below.  $i$ indicates number of grid cells and $j$ indicates number of anchor boxes at each grid cell. In our
 case, there is only one anchor box at each grid cell and $B = 1$.
 
-$$
-\text{Loss} =
-\lambda_{\text{coord}} \sum_{i=0}^{S^2} \sum_{j=0}^{B} \mathbb{1}_{ij}^{\text{obj}} 
-\left[ (x_i - \hat{x}_i)^2 + (y_i - \hat{y}_i)^2 \right] 
-+ \lambda_{\text{coord}} \sum_{i=0}^{S^2} \sum_{j=0}^{B} \mathbb{1}_{ij}^{\text{obj}} 
-\left[ (\sqrt{w_i} - \sqrt{\hat{w}_i})^2 + (\sqrt{h_i} - \sqrt{\hat{h}_i})^2 \right] 
-+ \sum_{i=0}^{S^2} \sum_{j=0}^{B} \mathbb{1}_{ij}^{\text{obj}} 
-(C_i - \hat{C}_i)^2
-+ \lambda_{\text{no obj}} \sum_{i=0}^{S^2} \sum_{j=0}^{B} \mathbb{1}_{ij}^{\text{no obj}} 
-(C_i - \hat{C}_i)^2
-+ \sum_{i=0}^{S^2} \mathbb{1}_{ij}^{\text{obj}} \sum_{c \in \text{classes}} 
-(p_i(c) - \hat{p}_i(c))^2
-$$
+![yolo loss] (images/loss.png)
 
 
 * In our case there is only one anchor box at each grid, hence $B = 1$.
