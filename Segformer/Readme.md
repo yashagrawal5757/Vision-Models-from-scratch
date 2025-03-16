@@ -1,4 +1,15 @@
-SegFormer is a simple architecture with some key innovations that allow it to acheive state of the art performance at much higher speeds and fewer parameters than other competing methods. Here we will implement the building blocks of SegFormer. An overview of the architecture is provided below.
+Segformer is a state of the art segmentation model. Typical CNN models for segmentation include UNet or DeepLab. Segformer uses transformers for doing segmentation.
+
+SegFormer is a simple architecture with some key innovations that allow it to acheive state of the art performance at much higher speeds and fewer parameters than other competing methods. 
+
+SegFormer introduces three main innovations:
+
+* MiT (Mix Transformer) Backbone → Extracts features efficiently (no CNNs!).
+* Lightweight Segmentation Head → Combines features smoothly.
+* No Positional Encoding → More flexible for real-world scenes.
+* No transformers in decoder - only Multi layer perception (MLP or FNN)
+
+ Here we will implement the building blocks of SegFormer. An overview of the architecture is provided below.
 
 ## Paper Link: 
 https://arxiv.org/pdf/2105.15203.pdf
