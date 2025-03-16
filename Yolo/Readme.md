@@ -47,7 +47,7 @@ During training, the localization and classification errors are optimized jointl
 as below.  $i$ indicates number of grid cells and $j$ indicates number of anchor boxes at each grid cell. In our
 case, there is only one anchor box at each grid cell and $B = 1$.
 
-![yolo loss] (images/loss.png)
+![yolo loss](images/loss.png)
 
 
 * In our case there is only one anchor box at each grid, hence $B = 1$.
