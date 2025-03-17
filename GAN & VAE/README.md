@@ -4,12 +4,6 @@
 
 This project demonstrates a detailed implementation of **Variational Auto Encoders (VAE), Generative Adversarial Networks (GAN), and CycleGAN** from scratch using Pytorch. It includes comprehensive explanations, parameter tuning processes, and extensive results visualization.
 
-## Table of Contents
-- [Implementation Details](#implementation-details)
-- [Report and Analysis](#report-and-analysis)
-
-
-
 ### VAE Implementation
 
 #### VAE Idea
